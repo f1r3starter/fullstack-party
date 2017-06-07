@@ -1,0 +1,28 @@
+version: '2'
+services:
+ web:
+  image: nginx:latest
+  ports:
+  - "8080:80"
+  volumes:
+  - ./docker/error.log:/var/log/error.log
+  - ./docker/access.log:/var/log/access.log
+  - ./docker/site.conf:/etc/nginx/conf.d/default.conf
+  volumes_from:
+  - php
+  links:
+  - php
+ php:
+  image: php:5.6-fpm
+  group_add:
+  - 1000
+  volumes:
+  - ./site:/app
+  - ./params.php:/app/config/params.php
+ composer:
+  build:
+   context: .
+   dockerfile: /docker/Dockerfile_composer
+  command: install -d /app
+  volumes_from:
+  - php

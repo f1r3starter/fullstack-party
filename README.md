@@ -1,29 +1,14 @@
-# Great task for Great Fullstack Developer
+# Fullstack party
 
-If you found this task it means we are looking for you!
+## Introduction
 
-> Note: To clone this repository you will need [GIT-LFS](https://git-lfs.github.com/)
+> This is backend implementation of the test assignment Fullstack party https://github.com/tesonet/fullstack-party
 
-## Few simple steps
+## Installation
 
-1. Fork this repo
-2. Do your best
-3. Prepare pull request and let us know that you are done
-
-## Few simple requirements
-
-- Design should be recreated as closely as possible.
-- Design must be responsive. Because we live in our smartphones and we will check with them for sure.
-- Use GitHub V3 REST API to receive data. [Docs here](https://developer.github.com/v3/)
-- Use popular PHP framework (SlimPHP, Lumen, Symfony, Laravel, Zend or any other)
-- Use AngularJS or ReactJS.
-- Use CSS preprocessor (SCSS preferred).
-- Browser support must be great. All modern browsers plus IE9 and above.
-- Use a Javascript task-runner. Gulp, Webpack or Grunt - it doesn't matter.
-- Do not commit the build, because we are building things on deployment.
-
-## Few tips
-
-- Structure! WE LOVE STRUCTURE!
-- Maybe You have an idea how it should interact with users? Do it! Its on you!
-- Have fun!
+> To run this application, you should complete next steps:
+1. Clone this project with "git clone https://github.com/f1r3starter/fullstack-party.git"
+2. Register your app here https://github.com/settings/developers , set "Homepage URL" and "Authorization callback URL" to "http://localhost:8080".
+3. Set given client id and secret id inside params.php, which is in the root directory of the project.
+4. Run command "docker-compose up" in the root directory of the project.
+5. If you have done everything right, the project can be accessed by the address "http://localhost:8080" .
